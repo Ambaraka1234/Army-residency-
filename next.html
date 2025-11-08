@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Information</title>
+    <link rel="stylesheet" href="next.css">
+</head>
+<body>
+    <form class="login-form" action="#" method="POST">
+        <h2 class="heading">Login Information</h2>
+        
+        <div class="form-group">
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="armyNo">Army Number:</label>
+            <input type="text" id="armyNo" name="armyNo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="relation">Relation:</label>
+            <select id="relation" name="relation" required>
+                <option value="">Select Relation</option>
+                <option value="son">Son</option>
+                <option value="daughter">Daughter</option>
+                <option value="spouse">Spouse</option>
+                <option value="parent">Parent</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="purpose">Purpose of Visit:</label>
+            <input type="text" id="purpose" name="purpose" required>
+        </div>
+
+        <div class="form-group">
+            <label for="duration">Duration (Days):</label>
+            <input type="number" id="duration" name="duration" min="1" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <a href="web.html" class="back-link">← Back to Home</a>
+    </form>
+</body>
+</html>
